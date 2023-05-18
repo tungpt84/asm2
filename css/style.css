@@ -1,0 +1,317 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+section > .container {
+  width: 1170px;
+  margin: auto;
+  display: block;
+  padding: 20px 50px;
+}
+section {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+/* XÂY DỰNG PHẦN BANNER */
+#banner {
+  position: relative;
+  margin: 0 20px;
+  text-align: center;
+  display: block;
+}
+.banner-name {
+  position: absolute;
+  font-size: 25px;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+.banner-name > p {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 0.5;
+}
+/* TẠO AVATAR */
+.avatar {
+  position: absolute;
+  top: 82%;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 50%;
+  width: 130px;
+  height: 140px;
+  border: 5px solid #f7f7f7;
+}
+/* XÂY DỰNG THANH ĐIỀU HƯỚNG */
+#nav-bar {
+  text-align: center;
+}
+.container > .nav-info {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+}
+.nav-info {
+  padding: 0 100px;
+}
+.nav-left,
+.nav-right {
+  display: flex;
+  gap: 20px;
+}
+[class*="icon-"] {
+  color: #199cdb;
+}
+.border {
+  background-color: rgb(191, 189, 189);
+  height: 30px;
+  width: 1px;
+}
+/* Tạo kiểu khi rê chuột vào các mục trên thanh điều hướng */
+a:link {
+  color: #000;
+  text-decoration: none;
+}
+a:visited {
+  /* color: #777; */
+  color: #000;
+}
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+a:active {
+  color: #199cdb;
+  font-style: italic;
+  background-color: black;
+}
+/* XÂY DỰNG PHẦN TT CÁ NHÂN & MTNN */
+#about {
+  margin: 0 20px;
+}
+#target {
+  padding: 20px;
+}
+#personal-info {
+  padding: 20px;
+  width: 100%;
+  background-color: rgb(214, 212, 212, 0.2);
+}
+.container-info {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+#target .section-title {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+#personal-info > .section-title {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+#personal-info {
+  justify-self: start;
+  padding-left: 40px;
+}
+.icons-mxh {
+  color: #199cdb;
+  padding-top: 15px;
+}
+/* XÂY DỰNG PHẦN THÔNG TIN NGHỀ NGHIỆP */
+#job-info > .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 550px 300px;
+  justify-items: center;
+  gap: 20px;
+}
+.container > .line {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 15% 85%;
+  width: 100%;
+  column-gap: 20px;
+  padding-top: 20px;
+}
+
+.content-info {
+  grid-column: 1 / -1;
+  grid-row: 0;
+}
+.time {
+  display: flex;
+}
+.present {
+  background-color: #199cdb;
+  color: white;
+  border-radius: 30px;
+  padding: 1px 15px;
+  margin-left: 5px;
+}
+.timeline {
+  position: relative;
+  padding-bottom: 20px;
+  padding-right: 30px;
+}
+li {
+  list-style-type: none;
+}
+.timeline li::after {
+  content: "";
+  position: absolute;
+  background-color: #199cdb;
+  width: 10px;
+  height: 10px;
+  left: 15px;
+  margin: 7px 0;
+  border-radius: 50%;
+}
+/* Chi tiết phần sở thích */
+.hobby {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column: 1 / -1;
+  padding-left: 10px;
+  text-align: center;
+  width: 300px;
+}
+.icon {
+  width: 80px;
+  padding-top: 40px;
+}
+.icon > [class*="ic-"] {
+  border: #199cdb solid 1px;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  padding-top: 10px;
+}
+/* Phần border xung quanh & icons  */
+.line {
+  border: 1px solid rgb(191, 189, 189);
+}
+.line > h1 {
+  margin-left: 20px;
+}
+.line > [class*="ic-"] {
+  scale: 2;
+  align-self: self-start;
+  color: gray;
+}
+/* Xây dựng các đường gạch thang điểm */
+.line-colors {
+  display: flex;
+  gap: 10px;
+}
+.color {
+  background-color: #199cdb;
+  width: 35px;
+  height: 2px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.color-blue {
+  background-color: #199cdb;
+}
+.color-gray {
+  background-color: gray;
+}
+.lang,
+.skill {
+  padding-left: 20px;
+  padding-top: 35px;
+}
+/* XÂY DỰNG PHẦN CHỨNG CHỈ */
+#certificate {
+  margin: 20px;
+}
+#certificate > .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.container > .section-title {
+  grid-column: 1/-1;
+}
+.cer-info {
+  display: flex;
+  gap: 20px;
+}
+.cer-1 {
+  border-right: solid 1px #d6c08d;
+}
+.cer-3 {
+  border-top: solid 1px #d6c08d;
+  padding: 20px 0;
+  grid-column: 1/-1;
+}
+/* XÂY DỰNG PHẦN DỰ ÁN */
+#project > .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.container > .section-title {
+  grid-column: 1/-1;
+}
+.img-prj {
+  display: block;
+}
+/* Phần chi tiết trong dự án */
+.cv-info {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+.year {
+  background-color: #199cdb;
+  color: white;
+  border-radius: 30px;
+  padding: 1px 15px;
+  margin-left: 10px;
+}
+.web-prj {
+  border: 1px solid rgb(191, 189, 189);
+}
+.title {
+  font-weight: bold;
+  padding: 10px;
+  border-bottom: 1px solid rgb(191, 189, 189);
+}
+/* Tạo bảng trong dự án */
+table {
+  border-collapse: collapse;
+  height: 270px;
+}
+tr {
+  border-top: 1px solid rgb(191, 189, 189);
+}
+td {
+  vertical-align: top;
+  padding: 10px;
+}
+.col-left {
+  width: 30%;
+}
+/* XÂY DỰNG PHẦN CHÂN TRANG */
+#footer {
+  margin: 20px;
+}
+#footer > .container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.icons > [class*="icon-"] {
+  color: #199cdb;
+  font-size: 20px;
+}
